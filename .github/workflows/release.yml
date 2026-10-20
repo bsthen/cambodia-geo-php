@@ -1,0 +1,92 @@
+name: Release
+
+# Every push to main: if the number in the VERSION file has no tag yet, test and create the tag v<version>
+# plus a GitHub Release. Packagist picks the tag up through its webhook (see RELEASING.md).
+# If the version is unchanged, nothing is released.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.v.outputs.version }}
+      release: ${{ steps.v.outputs.release }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - id: v
+        run: |
+          VERSION=$(tr -d '[:space:]' < VERSION)
+          if ! echo "$VERSION" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "VERSION must look like 1.2.3, got '$VERSION'"; exit 1
+          fi
+          if grep -q '"version"' composer.json; then
+            echo 'composer.json must not contain a "version" field (Packagist uses Git tags)'; exit 1
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          if git ls-remote --exit-code --tags origin "refs/tags/v$VERSION" >/dev/null 2>&1; then
+            echo "Tag v$VERSION already exists -> nothing to release."
+            echo "release=false" >> "$GITHUB_OUTPUT"
+          else
+            if ! grep -q "^## \[$VERSION\]" CHANGELOG.md; then
+              echo "CHANGELOG.md has no section '## [$VERSION]'"; exit 1
+            fi
+            echo "New version v$VERSION -> releasing."
+            echo "release=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  test:
+    needs: check
+    if: needs.check.outputs.release == 'true'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        php-version: ["8.1", "8.3", "8.5"]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          extensions: mbstring, intl
+          coverage: none
+      - run: composer validate --strict
+      - run: composer install --no-interaction --prefer-dist --no-progress
+      - name: Generated data files must be up to date
+        run: |
+          composer build-data
+          git diff --exit-code -- src
+      - run: composer test
+
+  release:
+    needs: [check, test]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # create the tag and the GitHub Release
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      VERSION: ${{ needs.check.outputs.version }}
+    steps:
+      - name: Create tag and GitHub Release
+        run: |
+          if gh release view "v$VERSION" >/dev/null 2>&1; then
+            echo "Release v$VERSION already exists."
+          else
+            gh release create "v$VERSION" \
+              --target "$GITHUB_SHA" \
+              --title "v$VERSION" \
+              --generate-notes
+          fi

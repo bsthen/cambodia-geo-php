@@ -1,0 +1,1375 @@
+{
+ "data_year": 2025,
+ "reference": "cambodia-geo (Python) 1.0.0",
+ "cases": [
+  {
+   "fn": "provinces",
+   "args": [],
+   "kwargs": {},
+   "expect": [
+    {
+     "code": "01",
+     "name_kh": "បន្ទាយមានជ័យ",
+     "name_en": "Banteay Meanchey"
+    },
+    {
+     "code": "02",
+     "name_kh": "បាត់ដំបង",
+     "name_en": "Battambang"
+    },
+    {
+     "code": "03",
+     "name_kh": "កំពង់ចាម",
+     "name_en": "Kampong Cham"
+    },
+    {
+     "code": "04",
+     "name_kh": "កំពង់ឆ្នាំង",
+     "name_en": "Kampong Chhnang"
+    },
+    {
+     "code": "05",
+     "name_kh": "កំពង់ស្ពឺ",
+     "name_en": "Kampong Speu"
+    },
+    {
+     "code": "06",
+     "name_kh": "កំពង់ធំ",
+     "name_en": "Kampong Thom"
+    },
+    {
+     "code": "07",
+     "name_kh": "កំពត",
+     "name_en": "Kampot"
+    },
+    {
+     "code": "08",
+     "name_kh": "កណ្ដាល",
+     "name_en": "Kandal"
+    },
+    {
+     "code": "09",
+     "name_kh": "កោះកុង",
+     "name_en": "Koh Kong"
+    },
+    {
+     "code": "10",
+     "name_kh": "ក្រចេះ",
+     "name_en": "Kratie"
+    },
+    {
+     "code": "11",
+     "name_kh": "មណ្ឌលគិរី",
+     "name_en": "Mondul Kiri"
+    },
+    {
+     "code": "12",
+     "name_kh": "រាជធានីភ្នំពេញ",
+     "name_en": "Phnom Penh"
+    },
+    {
+     "code": "13",
+     "name_kh": "ព្រះវិហារ",
+     "name_en": "Preah Vihear"
+    },
+    {
+     "code": "14",
+     "name_kh": "ព្រៃវែង",
+     "name_en": "Prey Veng"
+    },
+    {
+     "code": "15",
+     "name_kh": "ពោធិ៍សាត់",
+     "name_en": "Pursat"
+    },
+    {
+     "code": "16",
+     "name_kh": "រតនគិរី",
+     "name_en": "Ratanak Kiri"
+    },
+    {
+     "code": "17",
+     "name_kh": "សៀមរាប",
+     "name_en": "Siemreap"
+    },
+    {
+     "code": "18",
+     "name_kh": "ព្រះសីហនុ",
+     "name_en": "Sihanoukville"
+    },
+    {
+     "code": "19",
+     "name_kh": "ស្ទឹងត្រែង",
+     "name_en": "Stung Treng"
+    },
+    {
+     "code": "20",
+     "name_kh": "ស្វាយរៀង",
+     "name_en": "Svay Rieng"
+    },
+    {
+     "code": "21",
+     "name_kh": "តាកែវ",
+     "name_en": "Takeo"
+    },
+    {
+     "code": "22",
+     "name_kh": "ឧត្ដរមានជ័យ",
+     "name_en": "Otdar Meanchey"
+    },
+    {
+     "code": "23",
+     "name_kh": "កែប",
+     "name_en": "Kep"
+    },
+    {
+     "code": "24",
+     "name_kh": "ប៉ៃលិន",
+     "name_en": "Pailin"
+    },
+    {
+     "code": "25",
+     "name_kh": "ត្បូងឃ្មុំ",
+     "name_en": "Tboung Khmum"
+    }
+   ]
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "17"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "17",
+    "name_kh": "សៀមរាប",
+    "name_en": "Siemreap"
+   }
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "សៀមរាប"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "17",
+    "name_kh": "សៀមរាប",
+    "name_en": "Siemreap"
+   }
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "Siemreap"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "17",
+    "name_kh": "សៀមរាប",
+    "name_en": "Siemreap"
+   }
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    17
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "17",
+    "name_kh": "សៀមរាប",
+    "name_en": "Siemreap"
+   }
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "  SIEM reap "
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "17",
+    "name_kh": "សៀមរាប",
+    "name_en": "Siemreap"
+   }
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "017"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "17",
+    "name_kh": "សៀមរាប",
+    "name_en": "Siemreap"
+   }
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "១៧"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "17",
+    "name_kh": "សៀមរាប",
+    "name_en": "Siemreap"
+   }
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "01"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "01",
+    "name_kh": "បន្ទាយមានជ័យ",
+    "name_en": "Banteay Meanchey"
+   }
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "12"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "12",
+    "name_kh": "រាជធានីភ្នំពេញ",
+    "name_en": "Phnom Penh"
+   }
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "does-not-exist"
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    ""
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "   "
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    null
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    "-"
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    9999
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
+   "fn": "districts",
+   "args": [
+    "Siemreap"
+   ],
+   "kwargs": {},
+   "expect": [
+    {
+     "code": "1701",
+     "name_kh": "អង្គរជុំ",
+     "name_en": "Angkor Chum",
+     "province_code": "17"
+    },
+    {
+     "code": "1702",
+     "name_kh": "អង្គរធំ",
+     "name_en": "Angkor Thum",
+     "province_code": "17"
+    },
+    {
+     "code": "1703",
+     "name_kh": "បន្ទាយស្រី",
+     "name_en": "Banteay Srei",
+     "province_code": "17"
+    },
+    {
+     "code": "1704",
+     "name_kh": "ជីក្រែង",
+     "name_en": "Chi Kraeng",
+     "province_code": "17"
+    },
+    {
+     "code": "1706",
+     "name_kh": "ក្រឡាញ់",
+     "name_en": "Kralanh",
+     "province_code": "17"
+    },
+    {
+     "code": "1707",
+     "name_kh": "ពួក",
+     "name_en": "Puok",
+     "province_code": "17"
+    },
+    {
+     "code": "1709",
+     "name_kh": "ប្រាសាទបាគង",
+     "name_en": "Prasat Bakong",
+     "province_code": "17"
+    },
+    {
+     "code": "1710",
+     "name_kh": "សៀមរាប",
+     "name_en": "Siem Reab",
+     "province_code": "17"
+    },
+    {
+     "code": "1711",
+     "name_kh": "សូទ្រនិគម",
+     "name_en": "Sout Nikum",
+     "province_code": "17"
+    },
+    {
+     "code": "1712",
+     "name_kh": "ស្រីស្នំ",
+     "name_en": "Srei Snam",
+     "province_code": "17"
+    },
+    {
+     "code": "1713",
+     "name_kh": "ស្វាយលើ",
+     "name_en": "Svay Leu",
+     "province_code": "17"
+    },
+    {
+     "code": "1714",
+     "name_kh": "វ៉ារិន",
+     "name_en": "Varin",
+     "province_code": "17"
+    },
+    {
+     "code": "1715",
+     "name_kh": "រុនតាឯកតេជោសែន",
+     "name_en": "Run Ta Aek Techou Saen",
+     "province_code": "17"
+    }
+   ]
+  },
+  {
+   "fn": "districts",
+   "args": [
+    "17"
+   ],
+   "kwargs": {},
+   "expect": [
+    {
+     "code": "1701",
+     "name_kh": "អង្គរជុំ",
+     "name_en": "Angkor Chum",
+     "province_code": "17"
+    },
+    {
+     "code": "1702",
+     "name_kh": "អង្គរធំ",
+     "name_en": "Angkor Thum",
+     "province_code": "17"
+    },
+    {
+     "code": "1703",
+     "name_kh": "បន្ទាយស្រី",
+     "name_en": "Banteay Srei",
+     "province_code": "17"
+    },
+    {
+     "code": "1704",
+     "name_kh": "ជីក្រែង",
+     "name_en": "Chi Kraeng",
+     "province_code": "17"
+    },
+    {
+     "code": "1706",
+     "name_kh": "ក្រឡាញ់",
+     "name_en": "Kralanh",
+     "province_code": "17"
+    },
+    {
+     "code": "1707",
+     "name_kh": "ពួក",
+     "name_en": "Puok",
+     "province_code": "17"
+    },
+    {
+     "code": "1709",
+     "name_kh": "ប្រាសាទបាគង",
+     "name_en": "Prasat Bakong",
+     "province_code": "17"
+    },
+    {
+     "code": "1710",
+     "name_kh": "សៀមរាប",
+     "name_en": "Siem Reab",
+     "province_code": "17"
+    },
+    {
+     "code": "1711",
+     "name_kh": "សូទ្រនិគម",
+     "name_en": "Sout Nikum",
+     "province_code": "17"
+    },
+    {
+     "code": "1712",
+     "name_kh": "ស្រីស្នំ",
+     "name_en": "Srei Snam",
+     "province_code": "17"
+    },
+    {
+     "code": "1713",
+     "name_kh": "ស្វាយលើ",
+     "name_en": "Svay Leu",
+     "province_code": "17"
+    },
+    {
+     "code": "1714",
+     "name_kh": "វ៉ារិន",
+     "name_en": "Varin",
+     "province_code": "17"
+    },
+    {
+     "code": "1715",
+     "name_kh": "រុនតាឯកតេជោសែន",
+     "name_en": "Run Ta Aek Techou Saen",
+     "province_code": "17"
+    }
+   ]
+  },
+  {
+   "fn": "districts",
+   "args": [
+    17
+   ],
+   "kwargs": {},
+   "expect": [
+    {
+     "code": "1701",
+     "name_kh": "អង្គរជុំ",
+     "name_en": "Angkor Chum",
+     "province_code": "17"
+    },
+    {
+     "code": "1702",
+     "name_kh": "អង្គរធំ",
+     "name_en": "Angkor Thum",
+     "province_code": "17"
+    },
+    {
+     "code": "1703",
+     "name_kh": "បន្ទាយស្រី",
+     "name_en": "Banteay Srei",
+     "province_code": "17"
+    },
+    {
+     "code": "1704",
+     "name_kh": "ជីក្រែង",
+     "name_en": "Chi Kraeng",
+     "province_code": "17"
+    },
+    {
+     "code": "1706",
+     "name_kh": "ក្រឡាញ់",
+     "name_en": "Kralanh",
+     "province_code": "17"
+    },
+    {
+     "code": "1707",
+     "name_kh": "ពួក",
+     "name_en": "Puok",
+     "province_code": "17"
+    },
+    {
+     "code": "1709",
+     "name_kh": "ប្រាសាទបាគង",
+     "name_en": "Prasat Bakong",
+     "province_code": "17"
+    },
+    {
+     "code": "1710",
+     "name_kh": "សៀមរាប",
+     "name_en": "Siem Reab",
+     "province_code": "17"
+    },
+    {
+     "code": "1711",
+     "name_kh": "សូទ្រនិគម",
+     "name_en": "Sout Nikum",
+     "province_code": "17"
+    },
+    {
+     "code": "1712",
+     "name_kh": "ស្រីស្នំ",
+     "name_en": "Srei Snam",
+     "province_code": "17"
+    },
+    {
+     "code": "1713",
+     "name_kh": "ស្វាយលើ",
+     "name_en": "Svay Leu",
+     "province_code": "17"
+    },
+    {
+     "code": "1714",
+     "name_kh": "វ៉ារិន",
+     "name_en": "Varin",
+     "province_code": "17"
+    },
+    {
+     "code": "1715",
+     "name_kh": "រុនតាឯកតេជោសែន",
+     "name_en": "Run Ta Aek Techou Saen",
+     "province_code": "17"
+    }
+   ]
+  },
+  {
+   "fn": "districts",
+   "args": [
+    "សៀមរាប"
+   ],
+   "kwargs": {},
+   "expect": [
+    {
+     "code": "1701",
+     "name_kh": "អង្គរជុំ",
+     "name_en": "Angkor Chum",
+     "province_code": "17"
+    },
+    {
+     "code": "1702",
+     "name_kh": "អង្គរធំ",
+     "name_en": "Angkor Thum",
+     "province_code": "17"
+    },
+    {
+     "code": "1703",
+     "name_kh": "បន្ទាយស្រី",
+     "name_en": "Banteay Srei",
+     "province_code": "17"
+    },
+    {
+     "code": "1704",
+     "name_kh": "ជីក្រែង",
+     "name_en": "Chi Kraeng",
+     "province_code": "17"
+    },
+    {
+     "code": "1706",
+     "name_kh": "ក្រឡាញ់",
+     "name_en": "Kralanh",
+     "province_code": "17"
+    },
+    {
+     "code": "1707",
+     "name_kh": "ពួក",
+     "name_en": "Puok",
+     "province_code": "17"
+    },
+    {
+     "code": "1709",
+     "name_kh": "ប្រាសាទបាគង",
+     "name_en": "Prasat Bakong",
+     "province_code": "17"
+    },
+    {
+     "code": "1710",
+     "name_kh": "សៀមរាប",
+     "name_en": "Siem Reab",
+     "province_code": "17"
+    },
+    {
+     "code": "1711",
+     "name_kh": "សូទ្រនិគម",
+     "name_en": "Sout Nikum",
+     "province_code": "17"
+    },
+    {
+     "code": "1712",
+     "name_kh": "ស្រីស្នំ",
+     "name_en": "Srei Snam",
+     "province_code": "17"
+    },
+    {
+     "code": "1713",
+     "name_kh": "ស្វាយលើ",
+     "name_en": "Svay Leu",
+     "province_code": "17"
+    },
+    {
+     "code": "1714",
+     "name_kh": "វ៉ារិន",
+     "name_en": "Varin",
+     "province_code": "17"
+    },
+    {
+     "code": "1715",
+     "name_kh": "រុនតាឯកតេជោសែន",
+     "name_en": "Run Ta Aek Techou Saen",
+     "province_code": "17"
+    }
+   ]
+  },
+  {
+   "fn": "districts",
+   "args": [
+    "unknown"
+   ],
+   "kwargs": {},
+   "expect": []
+  },
+  {
+   "fn": "communes",
+   "args": [
+    "17",
+    "Angkor Thum"
+   ],
+   "kwargs": {},
+   "expect": [
+    {
+     "code": "170201",
+     "name_kh": "ជប់តាត្រាវ",
+     "name_en": "Chub Ta Trav",
+     "province_code": "17",
+     "district_code": "1702"
+    },
+    {
+     "code": "170202",
+     "name_kh": "លាងដៃ",
+     "name_en": "Leang Dai",
+     "province_code": "17",
+     "district_code": "1702"
+    },
+    {
+     "code": "170203",
+     "name_kh": "ពាក់ស្នែង",
+     "name_en": "Peak Snaeng",
+     "province_code": "17",
+     "district_code": "1702"
+    },
+    {
+     "code": "170204",
+     "name_kh": "ស្វាយចេក",
+     "name_en": "Svay Chek",
+     "province_code": "17",
+     "district_code": "1702"
+    }
+   ]
+  },
+  {
+   "fn": "communes",
+   "args": [
+    "សៀមរាប",
+    "1702"
+   ],
+   "kwargs": {},
+   "expect": [
+    {
+     "code": "170201",
+     "name_kh": "ជប់តាត្រាវ",
+     "name_en": "Chub Ta Trav",
+     "province_code": "17",
+     "district_code": "1702"
+    },
+    {
+     "code": "170202",
+     "name_kh": "លាងដៃ",
+     "name_en": "Leang Dai",
+     "province_code": "17",
+     "district_code": "1702"
+    },
+    {
+     "code": "170203",
+     "name_kh": "ពាក់ស្នែង",
+     "name_en": "Peak Snaeng",
+     "province_code": "17",
+     "district_code": "1702"
+    },
+    {
+     "code": "170204",
+     "name_kh": "ស្វាយចេក",
+     "name_en": "Svay Chek",
+     "province_code": "17",
+     "district_code": "1702"
+    }
+   ]
+  },
+  {
+   "fn": "communes",
+   "args": [
+    "17",
+    "unknown"
+   ],
+   "kwargs": {},
+   "expect": []
+  },
+  {
+   "fn": "communes",
+   "args": [
+    "unknown",
+    "1702"
+   ],
+   "kwargs": {},
+   "expect": []
+  },
+  {
+   "fn": "villages",
+   "args": [
+    "17",
+    "1702",
+    "ជប់តាត្រាវ"
+   ],
+   "kwargs": {},
+   "expect": [
+    {
+     "code": "17020101",
+     "name_kh": "ត្រពាំងទូក",
+     "name_en": "Trapeang Tuk",
+     "province_code": "17",
+     "district_code": "1702",
+     "commune_code": "170201"
+    },
+    {
+     "code": "17020102",
+     "name_kh": "ជប់",
+     "name_en": "Chub",
+     "province_code": "17",
+     "district_code": "1702",
+     "commune_code": "170201"
+    },
+    {
+     "code": "17020103",
+     "name_kh": "ប្រាសាទ",
+     "name_en": "Prasat",
+     "province_code": "17",
+     "district_code": "1702",
+     "commune_code": "170201"
+    },
+    {
+     "code": "17020104",
+     "name_kh": "ទ័ពស្វាយ",
+     "name_en": "Toap Svay",
+     "province_code": "17",
+     "district_code": "1702",
+     "commune_code": "170201"
+    },
+    {
+     "code": "17020105",
+     "name_kh": "ពងទឹក",
+     "name_en": "Pong Tuek",
+     "province_code": "17",
+     "district_code": "1702",
+     "commune_code": "170201"
+    }
+   ]
+  },
+  {
+   "fn": "villages",
+   "args": [
+    "Siemreap",
+    "Angkor Thum",
+    "170201"
+   ],
+   "kwargs": {},
+   "expect": [
+    {
+     "code": "17020101",
+     "name_kh": "ត្រពាំងទូក",
+     "name_en": "Trapeang Tuk",
+     "province_code": "17",
+     "district_code": "1702",
+     "commune_code": "170201"
+    },
+    {
+     "code": "17020102",
+     "name_kh": "ជប់",
+     "name_en": "Chub",
+     "province_code": "17",
+     "district_code": "1702",
+     "commune_code": "170201"
+    },
+    {
+     "code": "17020103",
+     "name_kh": "ប្រាសាទ",
+     "name_en": "Prasat",
+     "province_code": "17",
+     "district_code": "1702",
+     "commune_code": "170201"
+    },
+    {
+     "code": "17020104",
+     "name_kh": "ទ័ពស្វាយ",
+     "name_en": "Toap Svay",
+     "province_code": "17",
+     "district_code": "1702",
+     "commune_code": "170201"
+    },
+    {
+     "code": "17020105",
+     "name_kh": "ពងទឹក",
+     "name_en": "Pong Tuek",
+     "province_code": "17",
+     "district_code": "1702",
+     "commune_code": "170201"
+    }
+   ]
+  },
+  {
+   "fn": "villages",
+   "args": [
+    "17",
+    "1702",
+    "unknown"
+   ],
+   "kwargs": {},
+   "expect": []
+  },
+  {
+   "fn": "villages",
+   "args": [
+    "12",
+    "1209",
+    "120913"
+   ],
+   "kwargs": {},
+   "expect": []
+  },
+  {
+   "fn": "get_district",
+   "args": [
+    "1702"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "1702",
+    "name_kh": "អង្គរធំ",
+    "name_en": "Angkor Thum",
+    "province_code": "17"
+   }
+  },
+  {
+   "fn": "get_district",
+   "args": [
+    "Angkor Thum"
+   ],
+   "kwargs": {
+    "province": "Siemreap"
+   },
+   "expect": {
+    "code": "1702",
+    "name_kh": "អង្គរធំ",
+    "name_en": "Angkor Thum",
+    "province_code": "17"
+   }
+  },
+  {
+   "fn": "get_district",
+   "args": [
+    "Angkor Thum"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "1702",
+    "name_kh": "អង្គរធំ",
+    "name_en": "Angkor Thum",
+    "province_code": "17"
+   }
+  },
+  {
+   "fn": "get_district",
+   "args": [
+    "1702"
+   ],
+   "kwargs": {
+    "province": "does-not-exist"
+   },
+   "expect": null
+  },
+  {
+   "fn": "get_district",
+   "args": [
+    "1702"
+   ],
+   "kwargs": {
+    "province": "12"
+   },
+   "expect": null
+  },
+  {
+   "fn": "get_commune",
+   "args": [
+    "170201"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "170201",
+    "name_kh": "ជប់តាត្រាវ",
+    "name_en": "Chub Ta Trav",
+    "province_code": "17",
+    "district_code": "1702"
+   }
+  },
+  {
+   "fn": "get_commune",
+   "args": [
+    "ជប់តាត្រាវ"
+   ],
+   "kwargs": {
+    "district": "Angkor Thum",
+    "province": "17"
+   },
+   "expect": {
+    "code": "170201",
+    "name_kh": "ជប់តាត្រាវ",
+    "name_en": "Chub Ta Trav",
+    "province_code": "17",
+    "district_code": "1702"
+   }
+  },
+  {
+   "fn": "get_commune",
+   "args": [
+    "ជប់តាត្រាវ"
+   ],
+   "kwargs": {
+    "province": "17"
+   },
+   "expect": {
+    "code": "170201",
+    "name_kh": "ជប់តាត្រាវ",
+    "name_en": "Chub Ta Trav",
+    "province_code": "17",
+    "district_code": "1702"
+   }
+  },
+  {
+   "fn": "get_commune",
+   "args": [
+    "ជប់តាត្រាវ"
+   ],
+   "kwargs": {
+    "district": "1702"
+   },
+   "expect": {
+    "code": "170201",
+    "name_kh": "ជប់តាត្រាវ",
+    "name_en": "Chub Ta Trav",
+    "province_code": "17",
+    "district_code": "1702"
+   }
+  },
+  {
+   "fn": "get_commune",
+   "args": [
+    "170201"
+   ],
+   "kwargs": {
+    "district": "1703"
+   },
+   "expect": null
+  },
+  {
+   "fn": "get_commune",
+   "args": [
+    "Phnum Touch"
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
+   "fn": "get_commune",
+   "args": [
+    "Phnum Touch"
+   ],
+   "kwargs": {
+    "district": "0102",
+    "province": "01"
+   },
+   "expect": {
+    "code": "010207",
+    "name_kh": "ភ្នំតូច",
+    "name_en": "Phnum Touch",
+    "province_code": "01",
+    "district_code": "0102"
+   }
+  },
+  {
+   "fn": "get_commune",
+   "args": [
+    "ភ្នំតូច"
+   ],
+   "kwargs": {
+    "province": "01"
+   },
+   "expect": {
+    "code": "010207",
+    "name_kh": "ភ្នំតូច",
+    "name_en": "Phnum Touch",
+    "province_code": "01",
+    "district_code": "0102"
+   }
+  },
+  {
+   "fn": "get_village",
+   "args": [
+    "17020101"
+   ],
+   "kwargs": {},
+   "expect": {
+    "code": "17020101",
+    "name_kh": "ត្រពាំងទូក",
+    "name_en": "Trapeang Tuk",
+    "province_code": "17",
+    "district_code": "1702",
+    "commune_code": "170201"
+   }
+  },
+  {
+   "fn": "get_village",
+   "args": [
+    "ត្រពាំងទូក"
+   ],
+   "kwargs": {
+    "commune": "170201",
+    "district": "1702",
+    "province": "17"
+   },
+   "expect": {
+    "code": "17020101",
+    "name_kh": "ត្រពាំងទូក",
+    "name_en": "Trapeang Tuk",
+    "province_code": "17",
+    "district_code": "1702",
+    "commune_code": "170201"
+   }
+  },
+  {
+   "fn": "get_village",
+   "args": [
+    "Trapeang Tuk"
+   ],
+   "kwargs": {
+    "commune": "170201"
+   },
+   "expect": {
+    "code": "17020101",
+    "name_kh": "ត្រពាំងទូក",
+    "name_en": "Trapeang Tuk",
+    "province_code": "17",
+    "district_code": "1702",
+    "commune_code": "170201"
+   }
+  },
+  {
+   "fn": "get_village",
+   "args": [
+    "0506140-"
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
+   "fn": "get_village",
+   "args": [
+    "0506140-"
+   ],
+   "kwargs": {
+    "commune": "050614",
+    "district": "0506",
+    "province": "05"
+   },
+   "expect": {
+    "code": "0506140-",
+    "name_kh": "ភូមិទី ៣",
+    "name_en": "Phum Ti Bei",
+    "province_code": "05",
+    "district_code": "0506",
+    "commune_code": "050614"
+   }
+  },
+  {
+   "fn": "get_village",
+   "args": [
+    "0506140-"
+   ],
+   "kwargs": {
+    "commune": "050614"
+   },
+   "expect": {
+    "code": "0506140-",
+    "name_kh": "ភូមិទី ៣",
+    "name_en": "Phum Ti Bei",
+    "province_code": "05",
+    "district_code": "0506",
+    "commune_code": "050614"
+   }
+  },
+  {
+   "fn": "search",
+   "args": [
+    "Siemreap"
+   ],
+   "kwargs": {},
+   "expect": [
+    {
+     "level": "province",
+     "code": "17",
+     "name_kh": "សៀមរាប",
+     "name_en": "Siemreap"
+    }
+   ]
+  },
+  {
+   "fn": "search",
+   "args": [
+    "Siemreap"
+   ],
+   "kwargs": {
+    "limit": 1
+   },
+   "expect": [
+    {
+     "level": "province",
+     "code": "17",
+     "name_kh": "សៀមរាប",
+     "name_en": "Siemreap"
+    }
+   ]
+  },
+  {
+   "fn": "search",
+   "args": [
+    "Siemreap"
+   ],
+   "kwargs": {
+    "limit": 0
+   },
+   "expect": []
+  },
+  {
+   "fn": "search",
+   "args": [
+    ""
+   ],
+   "kwargs": {},
+   "expect": []
+  },
+  {
+   "fn": "search",
+   "args": [
+    "angkor"
+   ],
+   "kwargs": {
+    "limit": 5
+   },
+   "expect": [
+    {
+     "level": "village",
+     "code": "21010501",
+     "name_kh": "អង្គរ",
+     "name_en": "Angkor",
+     "province_code": "21",
+     "district_code": "2101",
+     "commune_code": "210105"
+    },
+    {
+     "level": "district",
+     "code": "0701",
+     "name_kh": "អង្គរជ័យ",
+     "name_en": "Angkor Chey",
+     "province_code": "07"
+    },
+    {
+     "level": "district",
+     "code": "1701",
+     "name_kh": "អង្គរជុំ",
+     "name_en": "Angkor Chum",
+     "province_code": "17"
+    },
+    {
+     "level": "district",
+     "code": "1702",
+     "name_kh": "អង្គរធំ",
+     "name_en": "Angkor Thum",
+     "province_code": "17"
+    },
+    {
+     "level": "district",
+     "code": "2101",
+     "name_kh": "អង្គរបូរី",
+     "name_en": "Angkor Borei",
+     "province_code": "21"
+    }
+   ]
+  },
+  {
+   "fn": "search",
+   "args": [
+    "angkor"
+   ],
+   "kwargs": {
+    "level": "district",
+    "limit": null
+   },
+   "expect": [
+    {
+     "level": "district",
+     "code": "0701",
+     "name_kh": "អង្គរជ័យ",
+     "name_en": "Angkor Chey",
+     "province_code": "07"
+    },
+    {
+     "level": "district",
+     "code": "1701",
+     "name_kh": "អង្គរជុំ",
+     "name_en": "Angkor Chum",
+     "province_code": "17"
+    },
+    {
+     "level": "district",
+     "code": "1702",
+     "name_kh": "អង្គរធំ",
+     "name_en": "Angkor Thum",
+     "province_code": "17"
+    },
+    {
+     "level": "district",
+     "code": "2101",
+     "name_kh": "អង្គរបូរី",
+     "name_en": "Angkor Borei",
+     "province_code": "21"
+    }
+   ]
+  },
+  {
+   "fn": "search",
+   "args": [
+    "angkor"
+   ],
+   "kwargs": {
+    "level": "commune",
+    "limit": 3
+   },
+   "expect": [
+    {
+     "level": "commune",
+     "code": "021002",
+     "name_kh": "អង្គរបាន",
+     "name_en": "Angkor Ban",
+     "province_code": "02",
+     "district_code": "0210"
+    },
+    {
+     "level": "commune",
+     "code": "030701",
+     "name_kh": "អង្គរបាន",
+     "name_en": "Angkor Ban",
+     "province_code": "03",
+     "district_code": "0307"
+    },
+    {
+     "level": "commune",
+     "code": "140501",
+     "name_kh": "អង្គរសរ",
+     "name_en": "Angkor Sar",
+     "province_code": "14",
+     "district_code": "1405"
+    }
+   ]
+  },
+  {
+   "fn": "search",
+   "args": [
+    "សៀមរាប"
+   ],
+   "kwargs": {
+    "level": "province"
+   },
+   "expect": [
+    {
+     "level": "province",
+     "code": "17",
+     "name_kh": "សៀមរាប",
+     "name_en": "Siemreap"
+    }
+   ]
+  },
+  {
+   "fn": "search",
+   "args": [
+    "17"
+   ],
+   "kwargs": {
+    "level": "province"
+   },
+   "expect": [
+    {
+     "level": "province",
+     "code": "17",
+     "name_kh": "សៀមរាប",
+     "name_en": "Siemreap"
+    }
+   ]
+  },
+  {
+   "fn": "search",
+   "args": [
+    "a"
+   ],
+   "kwargs": {
+    "level": "province",
+    "limit": null
+   },
+   "expect_len": 18
+  },
+  {
+   "fn": "search",
+   "args": [
+    "x"
+   ],
+   "kwargs": {
+    "level": "country"
+   },
+   "raises": "invalid_argument"
+  },
+  {
+   "fn": "search",
+   "args": [
+    "x"
+   ],
+   "kwargs": {
+    "limit": -1
+   },
+   "raises": "invalid_argument"
+  }
+ ]
+}

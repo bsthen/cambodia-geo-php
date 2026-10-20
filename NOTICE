@@ -1,0 +1,16 @@
+cambodia-geo (PHP)
+Copyright (c) 2026 bsthen. The source code is licensed under the MIT License (see LICENSE).
+
+Bundled data
+------------
+The package contains data about Cambodia's administrative divisions (provinces, districts,
+communes and villages), published by the General Directorate of Digital Economy (GDDE),
+Ministry of Economy and Finance, Royal Government of Cambodia.
+
+  Source: https://data.mef.gov.kh
+  Terms:  https://data.mef.gov.kh/terms-of-use
+
+The data is used under the Data EF Terms of Use, which require attribution to the data source.
+The values are reproduced unmodified (only re-encoded into PHP arrays).
+The MIT License applies to the source code only; the data remains subject to the terms above.
+This project is not affiliated with or endorsed by the Ministry of Economy and Finance.
