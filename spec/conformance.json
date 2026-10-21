@@ -291,6 +291,30 @@
    "expect": null
   },
   {
+   "fn": "get_province",
+   "args": [
+    -1
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    1.5
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
+   "fn": "get_province",
+   "args": [
+    true
+   ],
+   "kwargs": {},
+   "expect": null
+  },
+  {
    "fn": "districts",
    "args": [
     "Siemreap"
@@ -1178,6 +1202,30 @@
    "fn": "search",
    "args": [
     ""
+   ],
+   "kwargs": {},
+   "expect": []
+  },
+  {
+   "fn": "search",
+   "args": [
+    -1
+   ],
+   "kwargs": {},
+   "expect": []
+  },
+  {
+   "fn": "search",
+   "args": [
+    1.5
+   ],
+   "kwargs": {},
+   "expect": []
+  },
+  {
+   "fn": "search",
+   "args": [
+    null
    ],
    "kwargs": {},
    "expect": []
